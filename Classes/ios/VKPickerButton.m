@@ -49,7 +49,7 @@
   UINavigationItem* navigationItem = [[UINavigationItem alloc] initWithTitle:title];
   UIButton* closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
   __weak __typeof__(self) weakSelf = self;
-  [closeButton addEventHandler:^(id sender) {
+  [closeButton bk_addEventHandler:^(id sender) {
     [weakSelf dismiss];
   } forControlEvents:UIControlEventTouchUpInside];
   [closeButton setImage:[UIImage imageNamed:@"VKPickerButton_cross"] forState:UIControlStateNormal];

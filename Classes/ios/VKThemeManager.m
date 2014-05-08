@@ -36,7 +36,7 @@
   }
 
   NSMutableDictionary *themes = (self.database ? self.database : @{}).mutableCopy;
-  [newThemes apply:^(id key, id obj) {
+  [newThemes bk_apply:^(id key, id obj) {
     [themes setValue:obj forKey:key];
   }];
   self.database = [NSDictionary dictionaryWithDictionary:themes];

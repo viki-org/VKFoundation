@@ -10,6 +10,8 @@
 		1B1848DE18F51C0A0020F2EE /* UILabel+VKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1848DD18F51C0A0020F2EE /* UILabel+VKFoundation.m */; };
 		1B1848E618F562170020F2EE /* UIImage+VKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1848E318F562170020F2EE /* UIImage+VKFoundation.m */; };
 		1B20603419042BF100E11467 /* VKFoundation_themes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B20603319042BF100E11467 /* VKFoundation_themes.plist */; };
+		1B651A07191B8D080094BC9A /* NSObject+VKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBAF8E18EEC20100860C78 /* NSObject+VKFoundation.m */; };
+		1B651A08191B8D140094BC9A /* NSObject+VKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBAF8E18EEC20100860C78 /* NSObject+VKFoundation.m */; };
 		1B6B09DF18F23F1E00E6CB42 /* NSString+VKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B09DA18F23F1E00E6CB42 /* NSString+VKFoundation.m */; };
 		1B6B09E018F23F1E00E6CB42 /* VKThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B09DC18F23F1E00E6CB42 /* VKThemeManager.m */; };
 		1B6B09E118F23F1E00E6CB42 /* VKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B09DE18F23F1E00E6CB42 /* VKUtility.m */; };
@@ -40,7 +42,6 @@
 		1BB6AE6418EEA36B00767FA3 /* NSObject+VKFoundationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB6AE6318EEA36B00767FA3 /* NSObject+VKFoundationSpec.m */; };
 		1BB9D34D18F7B5E000568286 /* VKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB9D34C18F7B5E000568286 /* VKView.m */; };
 		1BC27F01190C2DD40038F002 /* NSString+VKFoundationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC27F00190C2DD40038F002 /* NSString+VKFoundationSpec.m */; };
-		1BDBAF9118EEC20100860C78 /* NSObject+VKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBAF8E18EEC20100860C78 /* NSObject+VKFoundation.m */; };
 		1BDBAF9218EEC20100860C78 /* UIView+VKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBAF9018EEC20100860C78 /* UIView+VKFoundation.m */; };
 		1BF8418E190F069200343C6F /* VKThemeManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8418D190F069200343C6F /* VKThemeManagerSpec.m */; };
 		1BF84191190F133D00343C6F /* VKUtilitySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF84190190F133D00343C6F /* VKUtilitySpec.m */; };
@@ -450,9 +451,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B651A07191B8D080094BC9A /* NSObject+VKFoundation.m in Sources */,
 				1B6B09EC18F24D4700E6CB42 /* VKScrubber.m in Sources */,
 				1BB6AE4B18EEA36B00767FA3 /* main.m in Sources */,
-				1BDBAF9118EEC20100860C78 /* NSObject+VKFoundation.m in Sources */,
 				1B6B09E018F23F1E00E6CB42 /* VKThemeManager.m in Sources */,
 				1B6B09DF18F23F1E00E6CB42 /* NSString+VKFoundation.m in Sources */,
 				1B1848E618F562170020F2EE /* UIImage+VKFoundation.m in Sources */,
@@ -474,6 +475,7 @@
 				1BF8418E190F069200343C6F /* VKThemeManagerSpec.m in Sources */,
 				1BB6AE6418EEA36B00767FA3 /* NSObject+VKFoundationSpec.m in Sources */,
 				1BC27F01190C2DD40038F002 /* NSString+VKFoundationSpec.m in Sources */,
+				1B651A08191B8D140094BC9A /* NSObject+VKFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
