@@ -1,6 +1,6 @@
 # VKFoundation
 
-VKFoundation provides convinient utilities that is used in Viki.
+VKFoundation provides convenient utilities that is used in Viki.
 
 ## Installation
 
