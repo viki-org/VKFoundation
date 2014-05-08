@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "VKFoundation"
-  s.version          = "0.1.20"
+  s.version          = "0.1.0"
   s.summary          = "VKFoundation provides convinient utilities that is used in Viki."
-  s.homepage         = "https://github.com/viki-org"
-  s.license          = 'MIT'
+  s.homepage         = "https://github.com/viki-org/VKFoundation"
+  s.license          = 'Apache License, Version 2.0'
   s.author           = { "Keisuke Matsuo" => "matzo@viki.com" }
   s.source           = { :git => "https://github.com/viki-org/VKFoundation.git", :tag => s.version.to_s }
 
