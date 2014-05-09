@@ -1,8 +1,5 @@
 //
-//  main.m
-//  VKFoundation
-//
-//  Created by Matsuo, Keisuke | Matzo | TRVDD on 4/4/14.
+//  Created by Viki.
 //  Copyright (c) 2014 Viki Inc. All rights reserved.
 //
 

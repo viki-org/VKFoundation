@@ -3,7 +3,6 @@
 //  Copyright (c) 2014 Viki Inc. All rights reserved.
 //
 
-#import <SBJson4.h>
 #import "VKUtility.h"
 #import "Reachability.h"
 #include <sys/types.h>
