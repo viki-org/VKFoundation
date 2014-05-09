@@ -18,7 +18,6 @@ PODS:
   - FXImageView (1.3.3)
   - OCMock (2.2.4)
   - Reachability (3.1.1)
-  - SBJson (4.0.1)
   - Specta (0.2.1)
 
 DEPENDENCIES:
@@ -28,7 +27,6 @@ DEPENDENCIES:
   - FXImageView (~> 1.3.3)
   - OCMock (~> 2.2.1)
   - Reachability (~> 3.1.1)
-  - SBJson (~> 4.0.1)
   - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
@@ -39,7 +37,6 @@ SPEC CHECKSUMS:
   FXImageView: 2c360e513710b81ac7db98f768fee2e8f36bcffb
   OCMock: 5008fae4b4789b8fc3e48cd7660f2eb5ef8ce89e
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  SBJson: 9749a0365b005bcb0b7adf74579d79372c11cc4f
   Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
 
 COCOAPODS: 0.32.1
