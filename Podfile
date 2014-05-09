@@ -1,9 +1,8 @@
-platform :ios, '6.0'
+platform :ios, '5.0'
 pod 'Reachability', '~> 3.1.1'
 pod 'DTCoreText', '~> 1.6.11'
 pod 'SBJson', '~> 4.0.1'
 pod 'CocoaLumberjack', '~> 1.7.0'
-pod 'BlocksKit', '~> 2.2.0'
 pod 'FXImageView', '~> 1.3.3'
 
 target 'VKFoundationTests' do
