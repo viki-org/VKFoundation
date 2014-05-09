@@ -7,7 +7,7 @@ VKFoundation provides convenient utilities that is used in Viki.
 VKFoundation is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
-    pod "VKFoundation", "~> 0.1.1"
+    pod "VKFoundation", "~> 0.1.0"
 
 ## Requirements
 

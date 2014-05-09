@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VKFoundation"
-  s.version          = "0.1.1"
+  s.version          = "0.1.0"
   s.summary          = "VKFoundation provides convinient utilities that is used in Viki."
   s.homepage         = "https://github.com/viki-org/VKFoundation"
   s.license          = 'Apache License, Version 2.0'
