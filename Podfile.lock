@@ -1,19 +1,4 @@
 PODS:
-  - BlocksKit (2.2.2):
-    - BlocksKit/All
-  - BlocksKit/All (2.2.2):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-    - BlocksKit/MessageUI
-    - BlocksKit/UIKit
-  - BlocksKit/Core (2.2.2)
-  - BlocksKit/DynamicDelegate (2.2.2)
-  - BlocksKit/MessageUI (2.2.2):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-  - BlocksKit/UIKit (2.2.2):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
   - CocoaLumberjack (1.7.0):
     - CocoaLumberjack/Core
     - CocoaLumberjack/Extensions
@@ -37,7 +22,6 @@ PODS:
   - Specta (0.2.1)
 
 DEPENDENCIES:
-  - BlocksKit (~> 2.2.0)
   - CocoaLumberjack (~> 1.7.0)
   - DTCoreText (~> 1.6.11)
   - Expecta (~> 0.3.0)
@@ -48,7 +32,6 @@ DEPENDENCIES:
   - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
-  BlocksKit: 125e4e69a62e3b85bacc5175737dae000b00b9fb
   CocoaLumberjack: be87113f649942f020a37c061c58009b6ee5ff68
   DTCoreText: 4d56bb74ff05a3b2415fc15fccc4b5689ed3119c
   DTFoundation: 42939bcb968b331673ae4992289bf0f761b588a4

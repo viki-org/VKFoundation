@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.author           = { "Keisuke Matsuo" => "matzo@viki.com" }
   s.source           = { :git => "https://github.com/viki-org/VKFoundation.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '6.0'
-  s.ios.deployment_target = '6.0'
+  s.platform     = :ios, '5.0'
+  s.ios.deployment_target = '5.0'
   s.requires_arc = true
 
   s.source_files = 'Classes/ios/*.{h,m}'
@@ -22,7 +22,6 @@ Pod::Spec.new do |s|
   s.dependency 'DTCoreText', '~> 1.6.11'
   s.dependency 'SBJson', '~> 4.0.1'
   s.dependency 'CocoaLumberjack', '~> 1.7.0'
-  s.dependency 'BlocksKit', '~> 2.2.0'
   s.dependency 'FXImageView', '~> 1.3.3'
 
   I18n.enforce_available_locales = false
