@@ -48,7 +48,7 @@
   navigationBar.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth;
   UINavigationItem* navigationItem = [[UINavigationItem alloc] initWithTitle:title];
   UIButton* closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-  __weak __typeof__(self) weakSelf = self;
+
   [closeButton addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
   [closeButton setImage:[UIImage imageNamed:@"VKPickerButton_cross"] forState:UIControlStateNormal];
   closeButton.frame = CGRectMake(0, 0, navigationBarHeight, navigationBarHeight);
