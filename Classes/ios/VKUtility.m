@@ -299,6 +299,13 @@
   return statusBarHeight;
 }
 
+- (CGRect)screenSize {
+  CGRect bounds = [[UIScreen mainScreen] bounds];
+  CGFloat width = MIN(CGRectGetWidth(bounds), CGRectGetHeight(bounds));
+  CGFloat height = MAX(CGRectGetWidth(bounds), CGRectGetHeight(bounds));
+  return CGRectMake(0, 0, width, height);
+}
+
 - (NSString *)appVersion {
   NSDictionary* infoDictionary = [[NSBundle mainBundle] infoDictionary];
   NSString* CFBundleVersion = [infoDictionary objectForKey:@"CFBundleVersion"];
