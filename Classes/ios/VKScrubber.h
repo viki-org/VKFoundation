@@ -1,17 +1,18 @@
-//
-//  Created by Viki.
-//  Copyright (c) 2014 Viki Inc. All rights reserved.
-//
-
 #import "VKSlider.h"
 
+@class VKScrubber;
+
 @protocol VKScrubberDelegate <NSObject>
-- (void)scrubbingBegin;
-- (void)scrubbingEnd;
+@optional
+- (void)scrubberDidBeginScrubbing:(VKScrubber*)scrubber;
+- (void)scrubberDidEndScrubbing:(VKScrubber*)scrubber;
+- (void)scrubberValueDidChange:(VKScrubber*)scrubber;
 @end
 
-@interface VKScrubber : VKSlider <VKScrubberDelegate>
+@interface VKScrubber : VKSlider
 
 @property (nonatomic, weak) id <VKScrubberDelegate> delegate;
 
 @end
+
+
