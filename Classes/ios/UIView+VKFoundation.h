@@ -20,6 +20,8 @@
 - (void)setFrameHeight:(CGFloat)newHeight;
 - (void)setFrameOriginX:(CGFloat)newX;
 - (void)setFrameOriginY:(CGFloat)newY;
+- (void)setFrameSize:(CGSize)newSize;
+- (void)setFrameOrigin:(CGPoint)newOrigin;
 @end
 
 typedef enum {
@@ -33,4 +35,8 @@ typedef enum {
 @interface UIView (Borders)
 - (void)addBorders:(UIViewBorderOptions)options;
 - (void)addBorders:(UIViewBorderOptions)options color:(UIColor*)color;
+@end
+
+@interface UIView (OnePixel)
++ (CGFloat)onePixel;
 @end

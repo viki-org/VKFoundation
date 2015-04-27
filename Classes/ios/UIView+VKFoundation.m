@@ -94,6 +94,18 @@
   self.frame = f;
 }
 
+- (void)setFrameSize:(CGSize)newSize {
+  CGRect f = self.frame;
+  f.size = newSize;
+  self.frame = f;
+}
+
+- (void)setFrameOrigin:(CGPoint)newOrigin {
+  CGRect f = self.frame;
+  f.origin = newOrigin;
+  self.frame = f;
+}
+
 @end
 
 @implementation UIView (Borders)
@@ -134,6 +146,14 @@
     [self addSubview:border];
   }
 
+}
+
+@end
+
+@implementation UIView (OnePixel)
+
++ (CGFloat)onePixel {
+  return 1.0f / [UIScreen mainScreen].scale;
 }
 
 @end
