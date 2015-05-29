@@ -115,9 +115,11 @@
 		1BF8418D190F069200343C6F /* VKThemeManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKThemeManagerSpec.m; sourceTree = "<group>"; };
 		1BF8418F190F074A00343C6F /* VKFoundationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VKFoundationTests-Prefix.pch"; sourceTree = "<group>"; };
 		1BF84190190F133D00343C6F /* VKUtilitySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKUtilitySpec.m; sourceTree = "<group>"; };
-		2B5EEE39693D4FBF82279C57 /* Pods-VKFoundationTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKFoundationTests.xcconfig"; path = "Pods/Pods-VKFoundationTests.xcconfig"; sourceTree = "<group>"; };
-		3C7627E0B9F1431286143E13 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		214C17832C6E1AE30D625C95 /* Pods-VKFoundationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKFoundationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKFoundationTests/Pods-VKFoundationTests.release.xcconfig"; sourceTree = "<group>"; };
+		439097447148DF8A86896DFD /* Pods-VKFoundationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKFoundationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKFoundationTests/Pods-VKFoundationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63D91340147C488393E49F0E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F85F5E04C90DE07EBB9077 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C6864D9302F4A8771253EF09 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FCC0D19DBD614269B3E4D472 /* libPods-VKFoundationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKFoundationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -206,8 +208,7 @@
 				1BB6AE5D18EEA36B00767FA3 /* VKFoundationTests */,
 				1BB6AE3D18EEA36B00767FA3 /* Frameworks */,
 				1BB6AE3C18EEA36B00767FA3 /* Products */,
-				3C7627E0B9F1431286143E13 /* Pods.xcconfig */,
-				2B5EEE39693D4FBF82279C57 /* Pods-VKFoundationTests.xcconfig */,
+				3C59CA5109B9B3B0ACFCE56D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +278,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3C59CA5109B9B3B0ACFCE56D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5F85F5E04C90DE07EBB9077 /* Pods.debug.xcconfig */,
+				C6864D9302F4A8771253EF09 /* Pods.release.xcconfig */,
+				439097447148DF8A86896DFD /* Pods-VKFoundationTests.debug.xcconfig */,
+				214C17832C6E1AE30D625C95 /* Pods-VKFoundationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,7 +338,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = VK;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Viki Inc.";
 				TargetAttributes = {
 					1BB6AE5518EEA36B00767FA3 = {
@@ -426,7 +438,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-VKFoundationTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKFoundationTests/Pods-VKFoundationTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CD61C9BC3A2A4568B5148599 /* Copy Pods Resources */ = {
@@ -441,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -513,7 +525,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "${ARCHS_STANDARD_32_BIT}";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -555,7 +566,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "${ARCHS_STANDARD_32_BIT}";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -589,9 +599,8 @@
 		};
 		1BB6AE6818EEA36B00767FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C7627E0B9F1431286143E13 /* Pods.xcconfig */;
+			baseConfigurationReference = C5F85F5E04C90DE07EBB9077 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "${ARCHS_STANDARD_32_BIT}";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -605,9 +614,8 @@
 		};
 		1BB6AE6918EEA36B00767FA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C7627E0B9F1431286143E13 /* Pods.xcconfig */;
+			baseConfigurationReference = C6864D9302F4A8771253EF09 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "${ARCHS_STANDARD_32_BIT}";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -621,7 +629,7 @@
 		};
 		1BB6AE6B18EEA36B00767FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B5EEE39693D4FBF82279C57 /* Pods-VKFoundationTests.xcconfig */;
+			baseConfigurationReference = 439097447148DF8A86896DFD /* Pods-VKFoundationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VKFoundation.app/VKFoundation";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -644,7 +652,7 @@
 		};
 		1BB6AE6C18EEA36B00767FA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B5EEE39693D4FBF82279C57 /* Pods-VKFoundationTests.xcconfig */;
+			baseConfigurationReference = 214C17832C6E1AE30D625C95 /* Pods-VKFoundationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VKFoundation.app/VKFoundation";
 				FRAMEWORK_SEARCH_PATHS = (

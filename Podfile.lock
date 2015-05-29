@@ -1,7 +1,7 @@
 PODS:
   - CocoaLumberjack (1.7.0):
-    - CocoaLumberjack/Core
-    - CocoaLumberjack/Extensions
+    - CocoaLumberjack/Core (= 1.7.0)
+    - CocoaLumberjack/Extensions (= 1.7.0)
   - CocoaLumberjack/Core (1.7.0)
   - CocoaLumberjack/Extensions (1.7.0):
     - CocoaLumberjack/Core
@@ -30,13 +30,13 @@ DEPENDENCIES:
   - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: be87113f649942f020a37c061c58009b6ee5ff68
-  DTCoreText: 4d56bb74ff05a3b2415fc15fccc4b5689ed3119c
-  DTFoundation: 42939bcb968b331673ae4992289bf0f761b588a4
-  Expecta: 322f1dc42610106a5ba9871b4924cf1635d80833
-  FXImageView: 2c360e513710b81ac7db98f768fee2e8f36bcffb
-  OCMock: 5008fae4b4789b8fc3e48cd7660f2eb5ef8ce89e
-  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
+  CocoaLumberjack: a2213b8410917a1a5ecfc5c63a4206edc24d3a5b
+  DTCoreText: 1fdd4dd13848865b3bf55e6f3d03c7ab638f7f6d
+  DTFoundation: ed464197055591116ba84902085e8fe89a5c4492
+  Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
+  FXImageView: f9d35a9b24ba76df577e6c65ef20572d3bce5d71
+  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.37.1

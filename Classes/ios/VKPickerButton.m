@@ -6,6 +6,7 @@
 #import "VKPickerButton.h"
 #import <QuartzCore/QuartzCore.h>
 #import "VKFoundation.h"
+#import "VKUtility.h"
 
 @implementation VKPickerButton
 
@@ -30,21 +31,26 @@
   [self.pickerView addSubview:self.overlay];
   
   CGFloat insetValue = 20.0f;
-  
-  self.containerView = [[UIView alloc] initWithFrame:CGRectInset(CGRectSetOrigin(self.pickerView.frame, CGPointZero), insetValue, insetValue)];
+  CGRect containerFrame = DEVICEVALUE(CGRectMake(0, 0, 480, 360), CGRectMake(0, 0, 300, 240));
+  self.containerView = [[UIView alloc] initWithFrame:containerFrame];
+  self.containerView.center = self.pickerView.center;
+  insetValue = self.containerView.frame.origin.y;
   self.containerView.layer.cornerRadius = 2.0f;
   self.containerView.clipsToBounds = YES;
   self.containerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
   [self.pickerView addSubview:self.containerView];
   
   CGFloat navigationBarHeight = 32.0f;
+  NSShadow *shadowAttribute = [NSShadow new];
+  shadowAttribute.shadowOffset = CGSizeZero;
+  shadowAttribute.shadowColor = [UIColor darkGrayColor];
+  
   UINavigationBar* navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.containerView.frame), navigationBarHeight)];
   [navigationBar setTitleTextAttributes:@{
-    UITextAttributeTextColor: THEMECOLOR(@"colorSection1"),
-    UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
-    UITextAttributeTextShadowColor: [UIColor darkGrayColor],
-    UITextAttributeFont: THEMEFONT(@"fontLight", 20.0f)
-  }];
+                                          NSForegroundColorAttributeName: THEMECOLOR(@"colorSection1"),
+                                          NSShadowAttributeName: shadowAttribute,
+                                          NSFontAttributeName: THEMEFONT(@"fontLight", 20.0f)
+                                          }];
   navigationBar.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth;
   UINavigationItem* navigationItem = [[UINavigationItem alloc] initWithTitle:title];
   UIButton* closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -73,7 +79,7 @@
   [self.containerView setFrameOriginY:CGRectGetHeight(self.pickerView.frame)];
   [UIView animateWithDuration:0.3f animations:^{
     [self.containerView setFrameOriginY:insetValue];
-    self.overlay.alpha = 0.6f;
+    self.overlay.alpha = 0.4f;
   }];
   
   self.isPresented = YES;
