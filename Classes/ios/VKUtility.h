@@ -45,7 +45,7 @@
 
 - (CGRect)statusBarFrameViewRect:(UIView*)view;
 - (CGFloat)statusBarHeight:(UIView*)view;
-- (CGRect)screenSize;
+- (CGSize)screenSize;
 @end
 
 @interface VKUtility (MemoryHogging)

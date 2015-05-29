@@ -299,12 +299,15 @@
   return statusBarHeight;
 }
 
-- (CGRect)screenSize {
-  CGRect bounds = [[UIScreen mainScreen] bounds];
-  CGFloat width = MIN(CGRectGetWidth(bounds), CGRectGetHeight(bounds));
-  CGFloat height = MAX(CGRectGetWidth(bounds), CGRectGetHeight(bounds));
-  return CGRectMake(0, 0, width, height);
+- (CGSize)screenSize {
+  CGSize size = [UIScreen mainScreen].bounds.size;
+  if ([VKSharedUtility isPad]) {
+    return CGSizeMake(MAX(size.width, size.height), MIN(size.width, size.height));
+  } else {
+    return CGSizeMake(MIN(size.width, size.height), MAX(size.width, size.height));
+  }
 }
+
 
 - (NSString *)appVersion {
   NSDictionary* infoDictionary = [[NSBundle mainBundle] infoDictionary];
