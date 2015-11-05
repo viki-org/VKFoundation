@@ -9,12 +9,3 @@ target 'VKFoundationTests' do
   pod 'Expecta',     '~> 0.3.1'   # expecta matchers
   pod 'OCMock',      '~> 2.2.1'   # OCMock
 end
-
-# Remove 64-bit build architecture from Pods targets
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |configuration|
-      target.build_settings(configuration.name)['ARCHS'] = '$(ARCHS_STANDARD_32_BIT)'
-    end
-  end
-end
