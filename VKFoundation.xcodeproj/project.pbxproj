@@ -301,6 +301,7 @@
 				1BB6AE3818EEA36B00767FA3 /* Frameworks */,
 				1BB6AE3918EEA36B00767FA3 /* Resources */,
 				CD61C9BC3A2A4568B5148599 /* Copy Pods Resources */,
+				E71D6AF43D049AD49EA58B07 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +321,7 @@
 				1BB6AE5318EEA36B00767FA3 /* Frameworks */,
 				1BB6AE5418EEA36B00767FA3 /* Resources */,
 				C73DECABBE7843848D15903B /* Copy Pods Resources */,
+				CEB533341C9F9997BE25D765 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,7 +340,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = VK;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Viki Inc.";
 				TargetAttributes = {
 					1BB6AE5518EEA36B00767FA3 = {
@@ -456,6 +458,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CEB533341C9F9997BE25D765 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKFoundationTests/Pods-VKFoundationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71D6AF43D049AD49EA58B07 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -539,6 +571,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -606,6 +639,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKFoundation/VKFoundation-Prefix.pch";
 				INFOPLIST_FILE = "VKFoundation/VKFoundation-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viki.viki-ios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
@@ -621,6 +656,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKFoundation/VKFoundation-Prefix.pch";
 				INFOPLIST_FILE = "VKFoundation/VKFoundation-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viki.viki-ios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
@@ -644,6 +680,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "VKFoundationTests/VKFoundationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viki.viki-ios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -663,6 +700,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKFoundationTests/VKFoundationTests-Prefix.pch";
 				INFOPLIST_FILE = "VKFoundationTests/VKFoundationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viki.viki-ios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
