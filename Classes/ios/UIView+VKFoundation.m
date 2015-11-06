@@ -157,3 +157,9 @@
 }
 
 @end
+
+@interface UIView (UITraitCollection)
+
+- (BOOL)isCompactWidth NS_AVAILABLE_IOS(8_0);
+
+@end
