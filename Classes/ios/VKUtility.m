@@ -121,10 +121,6 @@
   return [NSRunLoop mainRunLoop];
 }
 
-- (id)appDelegate {
-  return (id)[UIApplication sharedApplication].delegate;
-}
-
 - (BOOL)isConnected {
   return [self.internetReach currentReachabilityStatus] != NotReachable;
 }
