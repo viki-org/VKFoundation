@@ -41,8 +41,6 @@ typedef enum {
 + (CGFloat)onePixel;
 @end
 
-@implementation UIView (UITraitCollection)
-- (BOOL)isCompactWidth {
-  return self.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassCompact;
-}
+@interface UIView (UITraitCollection)
+- (BOOL)isCompactWidth;
 @end

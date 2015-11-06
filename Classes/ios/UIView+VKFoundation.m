@@ -158,8 +158,8 @@
 
 @end
 
-@interface UIView (UITraitCollection)
-
-- (BOOL)isCompactWidth NS_AVAILABLE_IOS(8_0);
-
+@implementation UIView (UITraitCollection)
+- (BOOL)isCompactWidth {
+  return self.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassCompact;
+}
 @end
