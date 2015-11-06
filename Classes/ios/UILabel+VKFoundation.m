@@ -31,7 +31,7 @@
 
 - (void)sizeToFitMaxSize:(CGSize)size {
   NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-  paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
+  paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
   paragraphStyle.alignment = self.textAlignment;
   CGRect targetRect = [self.text boundingRectWithSize:size
                                               options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
