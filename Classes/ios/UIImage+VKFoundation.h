@@ -9,6 +9,10 @@
 - (UIImage *)imageTintedWithColor:(UIColor *)color;
 - (UIImage *)imageTintedWithColor:(UIColor *)color fraction:(CGFloat)fraction;
 - (UIImage *)imageByApplyingAlpha:(CGFloat)alpha;
+- (UIImage *)imageWithCornerRadius:(CGFloat)radius;
+- (UIImage *)imageCroppedAndScaledToSize:(CGSize)size
+                             contentMode:(UIViewContentMode)contentMode
+                                padToFit:(BOOL)padToFit;
 
 + (UIImage*)roundedRectCutOutWithSize:(CGSize)size borderColor:(UIColor*)borderColor backgroundColor:(UIColor*)backgroundColor radius:(CGFloat)radius;
 
