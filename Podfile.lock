@@ -17,7 +17,6 @@ PODS:
   - DTFoundation/UIKit (1.7.8):
     - DTFoundation/Core
   - Expecta (0.3.1)
-  - FXImageView (1.3.5)
   - OCMock (2.2.4)
   - Reachability (3.1.1)
   - Specta (0.2.1)
@@ -26,7 +25,6 @@ DEPENDENCIES:
   - CocoaLumberjack (~> 1.7.0)
   - DTCoreText (~> 1.6.16)
   - Expecta (~> 0.3.1)
-  - FXImageView (~> 1.3.5)
   - OCMock (~> 2.2.1)
   - Reachability (~> 3.1.1)
   - Specta (~> 0.2.1)
@@ -36,7 +34,6 @@ SPEC CHECKSUMS:
   DTCoreText: 934a16fe9ffdd169c96261721b39dc312b75713d
   DTFoundation: 46e2b2fafe78d67febfd8d1f85fe9845a093f00e
   Expecta: a354d4633409dd9fe8c4f5ff5130426adbe31628
-  FXImageView: 7d84722b37f0afea9a64f12fdd4a6c7f9ecc4b16
   OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
