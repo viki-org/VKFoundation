@@ -29,11 +29,20 @@
   return preferredValue;
 }
 
-
 - (id)valueForKeyPathWithNilCheck:(NSString *)keyPath {
-  if ([self respondsToSelector:@selector(valueForKeyPath:)]) {
-    return NILIFNULL([self valueForKeyPath:keyPath]);
-  } else return nil;
+  if ((keyPath != nil && [keyPath isKindOfClass:[NSString class]] && keyPath.length > 0) == false) {
+    return nil;
+  }
+  
+  @try {
+    // Guard against crash if one of the keyPath descendant is not a key value coding-compliant.
+    // e.g. key is @"aps.alert.body", but dictionary is @{@"aps": @{@"alert": @"yey crash"} }}
+    if ([self respondsToSelector:@selector(valueForKeyPath:)]) {
+      return NILIFNULL([self valueForKeyPath:keyPath]);
+    } else return nil;
+  } @catch (NSException *exception) {
+    return nil;
+  }
 }
 
 @end
