@@ -39,9 +39,8 @@ describe(@"RUN_ON_UI_THREAD", ^{
       runSynchronously = YES;
     });
     
-    if (!runSynchronously) {
-      XCTFail(@"run asynchronously");
-    }
+    // need to wait for async call
+    expect(runSynchronously).after(2).to.equal(YES);
   });
 
 });
