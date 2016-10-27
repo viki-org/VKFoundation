@@ -38,7 +38,7 @@ NSString * const VKFoundationValueForKeyPathWithNilCheckExceptionNotification = 
   
   @try {
     // Guard against crash if one of the keyPath descendant is not a key value coding-compliant.
-    // e.g. key is @"aps.alert.body", but dictionary is @{@"aps": @{@"alert": @"yey crash"} }}
+    // e.g. key is @"aps.alert.body", but dictionary is @{@"aps": @{@"alert": @"yey crash"} }
     if ([self respondsToSelector:@selector(valueForKeyPath:)]) {
       return NILIFNULL([self valueForKeyPath:keyPath]);
     } else return nil;

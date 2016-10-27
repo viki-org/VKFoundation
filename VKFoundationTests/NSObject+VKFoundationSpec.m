@@ -3,6 +3,19 @@
 SpecBegin(NSObject_VKFoundation)
 
 describe(@"valueForKeyPathWithNilCheck", ^{
+  it(@"should get correct object", ^{
+    expect([@{@"aps": @{@"alert": @"pass"} } valueForKeyPathWithNilCheck:@"aps.alert"]).to.equal(@"pass");
+    expect([@{@"aps": @{@"alert": @"pass"} } valueForKeyPathWithNilCheck:@"aps.alert.missingKey"]).to.beNil();
+  });
+});
+
+describe(@"valueForKeyPathWithNilCheck", ^{
+  it(@"should return nil if object is NSNull", ^{
+    expect([@{@"nullObject":[NSNull null]} valueForKeyPathWithNilCheck:@"nullObject"]).to.beNil();
+  });
+});
+
+describe(@"valueForKeyPathWithNilCheck", ^{
   it(@"should return nil if object is NSNull", ^{
     expect([@{@"nullObject":[NSNull null]} valueForKeyPathWithNilCheck:@"nullObject"]).to.beNil();
   });
