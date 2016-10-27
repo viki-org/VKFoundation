@@ -11,7 +11,7 @@ it simply add the following line to your Podfile:
 
 ## Requirements
 
-iOS 5.0 or later
+iOS 8.0 or later
 
 ## License
 
