@@ -32,7 +32,7 @@ NSString * const VKFoundationValueForKeyPathWithNilCheckExceptionNotification = 
 }
 
 - (id)valueForKeyPathWithNilCheck:(NSString *)keyPath {
-  if ((keyPath != nil && [keyPath isKindOfClass:[NSString class]] && keyPath.length > 0) == false) {
+  if (![keyPath isKindOfClass:[NSString class]]) {
     return nil;
   }
   

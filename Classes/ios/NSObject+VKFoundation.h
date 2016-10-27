@@ -5,6 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  notification that gets sent when an exception is raised in -valueForKeyPathWithNilCheck:
  */
@@ -18,3 +20,5 @@ extern NSString * const VKFoundationValueForKeyPathWithNilCheckExceptionNotifica
 @end
 
 void RUN_ON_UI_THREAD(dispatch_block_t block);
+
+NS_ASSUME_NONNULL_END
