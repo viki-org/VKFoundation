@@ -6,6 +6,8 @@
 #import "NSObject+VKFoundation.h"
 #import "VKFoundationLib.h"
 
+NSString * const VKFoundationValueForKeyPathWithNilCheckExceptionNotification = @"VKFoundationValueForKeyPathWithNilCheckExceptionNotification";
+
 @implementation NSObject (VKFoundation)
 
 - (id)preferredValueForKey:(NSString*)key languageCode:(NSString*)languageCode {
@@ -41,6 +43,7 @@
       return NILIFNULL([self valueForKeyPath:keyPath]);
     } else return nil;
   } @catch (NSException *exception) {
+    [[NSNotificationCenter defaultCenter] postNotificationName:VKFoundationValueForKeyPathWithNilCheckExceptionNotification object:self userInfo:@{@"key_path": keyPath, @"exception": exception}];
     return nil;
   }
 }

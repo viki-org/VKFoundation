@@ -5,6 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ notification that gets sent when an exception is raised in -valueForKeyPathWithNilCheck:
+ */
+extern NSString * const VKFoundationValueForKeyPathWithNilCheckExceptionNotification;
+
 @interface NSObject (VKFoundation)
 
 - (id)preferredValueForKey:(NSString*)key languageCode:(NSString*)languageCode;
