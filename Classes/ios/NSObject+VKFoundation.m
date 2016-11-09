@@ -34,6 +34,8 @@
     return nil;
   }
   
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"hahaha" object:self userInfo:nil];
+  
   @try {
     // Guard against crash if one of the keyPath descendant is not a key value coding-compliant.
     // e.g. key is @"aps.alert.body", but dictionary is @{@"aps": @{@"alert": @"yey crash"} }
