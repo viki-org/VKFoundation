@@ -8,9 +8,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- notification that gets sent when an exception is raised in -valueForKeyPathWithNilCheck:
+ The notification that is sent when an exception is raised in -valueForKeyPathWithNilCheck:.
  */
-extern NSString * const VKFoundationValueForKeyPathWithNilCheckExceptionNotification;
+#define VKFoundationValueForKeyPathWithNilCheckExceptionNotification @"VKFoundationValueForKeyPathWithNilCheckExceptionNotification"
 
 @interface NSObject (VKFoundation)
 

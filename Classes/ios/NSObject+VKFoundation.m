@@ -6,8 +6,6 @@
 #import "NSObject+VKFoundation.h"
 #import "VKFoundationLib.h"
 
-NSString * const VKFoundationValueForKeyPathWithNilCheckExceptionNotification = @"VKFoundationValueForKeyPathWithNilCheckExceptionNotification";
-
 @implementation NSObject (VKFoundation)
 
 - (id)preferredValueForKey:(NSString*)key languageCode:(NSString*)languageCode {
