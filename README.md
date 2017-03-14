@@ -1,3 +1,5 @@
+Update: Source code in this repo is copied to viki-ios, so it is easier to modify.
+
 # VKFoundation
 
 VKFoundation provides convenient utilities that is used in Viki.
