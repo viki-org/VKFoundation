@@ -1,4 +1,4 @@
-Update: Source code in this repo is copied to viki-ios, so it is easier to modify.
+*** NOTICE: Source code in this repo is copied to viki-ios, so it is easier to modify. It won't be updated here anymore. ***
 
 # VKFoundation
 
